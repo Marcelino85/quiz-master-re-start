@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - AWS re/Start</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz AWS re/Start</h1>
+    </header>
+
+    <main>
+        <div id="question-container">
+            <h2 id="question-title"></h2>
+            <strong><p id="question-count"></p></strong> <!-- Contagem da questão -->
+            <ul id="alternatives-list"></ul>
+            <div id="comment-container">
+                <p id="comment"></p>
+            </div>
+            <button id="next-button" disabled>Próxima Pergunta</button>
+        </div>
+        <!-- Tela final com a porcentagem de acertos -->
+        <div id="result-container" class="hidden">
+            <h2>Resultado Final</h2>
+            <p id="result-text"></p>
+            <button id="retry-button">Refazer Quiz</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Quiz AWS re/Start - Todos os direitos reservados Marcelino Albuquerque.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
