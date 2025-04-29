@@ -13,18 +13,39 @@
 
     <main>
         <div id="question-container">
+            <!-- Barra de Progresso -->
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <!-- Cronômetro -->
+            <div id="timer">Tempo restante: 60s</div>
+
+            <!-- Título da pergunta -->
             <h2 id="question-title"></h2>
-            <strong><p id="question-count"></p></strong> <!-- Contagem da questão -->
+
+            <!-- Contagem de questões -->
+            <strong><p id="question-count"></p></strong>
+
+            <!-- Quantas respostas deve escolher -->
+            <div id="required-answers-info"></div>
+
+            <!-- Lista de alternativas -->
             <ul id="alternatives-list"></ul>
+
+            <!-- Comentário de feedback -->
             <div id="comment-container">
                 <p id="comment"></p>
             </div>
+
+            <!-- Botão de próxima pergunta -->
             <button id="next-button" disabled>Próxima Pergunta</button>
         </div>
+
         <!-- Tela final com a porcentagem de acertos -->
         <div id="result-container" class="hidden">
             <h2>Resultado Final</h2>
-            <p id="result-text"></p>
+            <h1 id="result-text"></h1>
             <button id="retry-button">Refazer Quiz</button>
         </div>
     </main>
