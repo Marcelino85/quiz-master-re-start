@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:3001/api/questions';
+const apiUrl = 'https://quiz-backend-tvuf.onrender.com/api/questions';
 
 let currentQuestionIndex = 0;
 let questions = [];
