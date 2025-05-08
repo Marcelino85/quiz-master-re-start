@@ -123,7 +123,7 @@ nextButton.onclick = function() {
     checkAnswer(); // Verifica a resposta
     currentQuestionIndex++;
 
-    let countdown = 10; // Tempo em segundos
+    let countdown = 20; // Tempo em segundos
     commentText.innerHTML += `<br><br><span style="color: red;">Próxima pergunta em ${countdown} segundos...</span>`;
    
 
@@ -161,9 +161,9 @@ retryButton.onclick = function() {
     questions = shuffleArray(questions);
     loadQuestion();
 };
-
+// Função que responde pelo tempo para cada questão
 function startTimer() {
-    timeLeft = 60;
+    timeLeft = 120;
     timerDisplay.textContent = `Tempo restante: ${timeLeft}s`;
 
     timerInterval = setInterval(() => {
